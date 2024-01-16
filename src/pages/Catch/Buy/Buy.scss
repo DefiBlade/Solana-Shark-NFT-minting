@@ -1,0 +1,128 @@
+.buy {
+
+    .buy-container {
+
+        // max-width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        min-height: 100vh;
+        height: 100%;
+        background: url('../../../assets/images/team-back.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+
+        .buy-title {    
+            padding-top: 160px;
+            padding-bottom: 100px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 83px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #D9D9D9;
+
+            .buy-title-highlight {
+                color: #38B6FF;
+            }
+        }
+
+        .buy-controls {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            color: #D9D9D9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-bottom: 50px;
+
+            .buy-now {
+                background: #38B6FF;
+                border-radius: 20px;
+                padding: 16px 56px;
+                cursor: pointer;
+            }
+
+            .buy-how {
+                background: transparent;
+                border-radius: 20px;
+                padding: 16px 56px;
+                border: 2px solid #D9D9D9;
+                cursor: pointer;
+            }
+
+        }
+
+        .buy-label {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #D9D9D9;
+            padding-bottom: 42px;
+        }
+
+        .buy-socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .buy {
+
+        .buy-container {
+    
+            .buy-controls {
+                flex-direction: column;
+            }
+    
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .buy {
+
+        .buy-container {
+    
+    
+            .buy-title {    
+                font-size: 12.5vw;
+                line-height: 13vw;
+            }
+    
+            .buy-controls {
+                font-size: 4vw;
+                line-height: 5vw;
+                .buy-now {
+                    padding: 2.8vw 5.2vw;
+                }
+    
+                .buy-how {
+                    padding: 2.8vw 5.2vw;
+                }
+    
+            }
+    
+            .buy-label {
+                font-size: 4vw;
+                line-height: 5vw;
+            }
+
+            .buy-socials {
+                gap: 10vw;
+            }
+        }
+    }
+}

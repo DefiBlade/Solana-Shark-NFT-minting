@@ -1,0 +1,238 @@
+.about {
+    overflow: hidden;
+    position: relative;
+    .about-title-back {
+        font-weight: bold;
+        font-size: 140pt;
+        line-height: 166px;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        padding-bottom: 28px;
+        left: -25px;
+        top: 50px;
+        position: absolute;
+        overflow: hidden;
+    }
+    .about-container {
+        // max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding-top: 150px;
+
+
+        .about-cards {
+            display: flex;
+            flex-direction: column;
+            // padding-bottom: 140px;
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-top: 100px;
+            gap: 70px;
+            position: relative;
+
+            .about-card-circle-back {
+                position: absolute;
+                overflow: hidden;
+                z-index: 1;
+                left: 0;
+                top: 400px;
+                
+                div {
+                    height: 650px;
+                    width: 650px;
+                    background-color: #3A677D33;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+
+            .about-card-back1 {
+                position: absolute;
+                z-index: 1;
+                right: 208px;
+                top: 440px;
+                overflow: hidden;
+                
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .about-card {
+                z-index: 1;
+                display: grid;
+                padding-left: 12%;
+                padding-right: 16%;
+                grid-template-columns: repeat(2, 50%);
+
+                .about-card-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .about-card-title {
+                        font-weight: bold;
+                        font-size: 2rem;
+                        line-height: 55px;
+
+                        color: #FFFFFF;
+                        padding-bottom: 40px;
+                    }
+
+                    .about-card-description {
+                        font-family: 'Glacial Indifference';
+                        font-size: 1.5rem;
+                        line-height: 1.5;
+
+                        color: #D9D9D9;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+                    }
+
+                    .about-card-clue {
+                        margin-top: 1rem;
+                    }
+
+                    .about-card-content-control {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        
+                        .about-card-content-button {
+                            display: inline-block;
+                            background: #38B6FF;
+                            border-radius: 15px;
+                            padding: 10px;
+                            font-size: 1.75rem;
+                            line-height: 1;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+
+                .about-card-image {
+                    img {
+                        max-width: 100%;
+                    }
+                    .about-card-image-shark {
+                        display: inline-block;
+                        position: relative;
+                        img {
+                            border-radius: 20px;  
+                        }
+                        
+                        .about-card-new-image {
+                            right: -32px;
+                            top: -32px;
+                            position: absolute;
+                        }
+                    }
+                }
+
+            }
+
+            .about-card:first-of-type {
+                .about-card-content {
+                    padding-right: 80px;
+                }
+
+                .about-card-image {
+                    
+                    text-align: center;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .about-card:first-of-type {
+                .about-card-content {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .about {
+        .about-container {
+    
+            .about-cards {
+                padding-left: 5vw;
+                padding-right: 5vw;
+                gap: 5vw;
+    
+                .about-card-circle-back {
+                    top: 25vw;
+                }
+    
+                .about-card-back1 {
+                    right: 13vw;
+                    top: 28vw;
+                }
+    
+                .about-card {
+                    .about-card-content {
+    
+                        .about-card-description {
+                            gap: 1.7vw;
+                        }
+    
+                        .about-card-content-control {
+                            gap: 1.75vw;
+                            
+                            .about-card-content-button {
+                                padding: 10px;
+                            }
+    
+                        }
+                    }
+                }
+    
+                .about-card:first-of-type {
+                    .about-card-content {
+                        padding-right: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .about {
+        .about-container {
+            .about-cards {
+                gap: 10vw;
+                .about-card {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 10vw;
+    
+                    .about-card-content {
+                        gap: 10vw;
+
+                        .about-card-content-control {
+                            justify-content: center;
+                        }
+                    }
+    
+                    .about-card-image {
+                        text-align: center;
+                    }
+    
+                }
+    
+                .about-card:first-of-type {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    
+}

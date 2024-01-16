@@ -1,0 +1,218 @@
+.roadmap {
+    color: #FFFFFF;
+
+    .roadmap-container {
+        // max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+        position: relative;
+
+        .roadmap-back2 {
+            position: absolute;
+            overflow: hidden;
+            // left: -140px;
+            top: 500px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .roadmap-back3 {
+            position: absolute;
+            overflow: hidden;
+            left: 192px;
+            bottom: 42px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .roadmap-leaf {
+            position: absolute;
+            overflow: hidden;
+            top: calc(50% - 300px);
+            right:20%;
+            img {
+                max-width: 100%;
+            }
+        } 
+
+        .roadmap-title-back {
+            font-weight: bold;
+            font-size: 130pt;;
+            line-height: 166px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            position: relative;
+            left: 40px;
+            overflow: hidden;
+        }
+
+        .roadmap-header {
+            .roadmap-title {
+                font-weight: bold;
+                font-size: 2rem;
+                line-height: 55px;
+                text-align: center;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                color: #38B6FF;
+            }
+
+            .roadmap-header-image {
+                padding-top: 16px;
+                text-align: center;
+            }
+        }
+
+        .roadmap-rows {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 50px;
+
+            .roadmap-row {
+                justify-content: end;
+                display: flex;
+                flex-wrap: wrap;
+
+                .roadmap-item {
+                    padding-bottom: 32px;
+                    position: relative;
+                    width: 50%;
+                    display: inline-block;
+                    text-align: left;
+
+                    .roadmap-item-circle {
+                        position: absolute;
+                        overflow: hidden;
+                        width: 30px;
+                        height: 30px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        left: -111px;
+                    }
+
+                    .roadmap-item-line {
+                        position: absolute;
+                        overflow: hidden;
+                        left: -100px;
+                        z-index: -1;
+                        top: 30px;
+                        width: 7px;
+                        height: 100%;
+                        background-color: #D9D9D9;
+                    }
+
+                    .roadmap-item-title {
+                        font-weight: bold;  
+                        font-size: 2rem;
+                        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+                        text-transform: uppercase;
+                    }
+
+                    .roadmap-item-image {
+                        padding: 8px 0px;
+                    }
+
+                    .roadmap-item-content {
+                        font-family: 'Glacial Indifference';
+                        font-size: 1.5rem;
+                        line-height: 1.5;
+                        color: #FFFFFF;
+                        padding-right: 250px;
+                    }
+                }
+            }
+
+            .roadmap-row:last-of-type {
+                .roadmap-item {
+                    .roadmap-item-line {
+                        width: 0px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .roadmap {
+        .roadmap-container {
+            // .roadmap-back2 {
+            //     top: 35vw;
+            // }
+    
+            // .roadmap-back3 {
+            //     left: 14vw;
+            //     bottom: 3vw;
+            // }
+    
+            // .roadmap-leaf {
+            //     right: 14vw;
+            // } 
+    
+            // .roadmap-title-back {
+            //     left: -2.7vw;
+            // }
+    
+            // .roadmap-rows {
+            //     .roadmap-row {
+            //         .roadmap-item {
+            //             .roadmap-item-circle {
+            //                 // left: calc(-12vw - 12px);
+            //             }
+    
+            //             .roadmap-item-line {
+            //                 left: -12vw;
+            //                 top: 2vw;
+            //             }
+    
+            //             .roadmap-item-image {
+            //                 padding: 2.5vw 0px;
+            //             }
+    
+            //             .roadmap-item-content {
+            //                 padding-right: 20vw;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .roadmap {
+        .roadmap-container {
+            .roadmap-rows {
+                .roadmap-row {
+                    padding-left: 5vw;
+                    padding-right: 5vw;
+                    justify-content: start;
+    
+                    .roadmap-item {
+                        padding-left: 20vw;
+                        width: 100%;
+
+                        .roadmap-item-circle {
+                            left: calc(-12px + 5vw);
+                        }
+    
+                        .roadmap-item-content {
+                            padding-right: 0;
+                        }
+
+                        .roadmap-item-line {
+                            left: 5vw;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}

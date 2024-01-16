@@ -1,0 +1,638 @@
+.mint {
+  .mint-container {
+    // max-width: 1920px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+
+    .mint-header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 16px;
+      padding-left: 24px;
+      padding-right: 24px;
+      // padding-
+      .mint-header-logo {
+        width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .mint-header-account {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+
+        .mint-header-address {
+          padding: 8px 16px;
+          border-radius: 8px;
+          border: 8px;
+          border: 1px solid #0072ff;
+          cursor: pointer;
+        }
+
+        .mint-header-connect {
+          padding: 8px 16px;
+          border-radius: 8px;
+          border: 8px;
+          cursor: pointer;
+          background-color: #0072ff;
+        }
+      }
+    }
+
+    .mint-main {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+
+      .mint-shark {
+        position: relative;
+
+        .mint-title-back {
+          position: relative;
+          left: -36px;
+          font-size: 144px;
+          line-height: 166px;
+          color: transparent;
+          -webkit-text-stroke: 1px white;
+        }
+
+        .mint-shark-image {
+          position: absolute;
+          left: calc(20%);
+          bottom: 0px;
+        }
+
+        .mint-shark-leaf {
+          position: absolute;
+          bottom: 0px;
+        }
+      }
+
+      .mint-info {
+        padding-bottom: 36px;
+
+        .mint-info-panel {
+          border-radius: 8px;
+          border: 3px solid #0072ff;
+          display: inline-block;
+          padding-top: 48px;
+          padding-bottom: 36px;
+
+          .mint-info-title {
+            padding: 0px 36px;
+            padding-bottom: 24px;
+
+            font-size: 36px;
+          }
+
+          .mint-info-date {
+            padding: 0px 36px;
+            padding-bottom: 24px;
+
+            display: flex;
+            justify-content: space-between;
+
+            .mint-info-time {
+              font-size: 27px;
+
+              .mint-info-time-content {
+              }
+
+              .mint-info-time-unit {
+                color: #0072ff;
+              }
+            }
+          }
+
+          .mint-info-data {
+            padding: 0px 8px;
+            padding-top: 72px;
+            font-size: 21px;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+
+            .mint-info-data-label {
+              align-self: center;
+            }
+
+            .mint-info-data-row {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 8px;
+              padding-left: 4px;
+              padding-right: 4px;
+              border-bottom: 1px solid #0072ff;
+
+              .mint-info-data-amount {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+
+                &-minus {
+                  font-size: 24px;
+                  cursor: pointer;
+                  align-self: center;
+                }
+
+                &-plus {
+                  font-size: 24px;
+                  cursor: pointer;
+                  align-self: center;
+                }
+
+                &-value {
+                  align-self: center;
+                }
+
+                &-max {
+                  cursor: pointer;
+                  border: 1px solid #fff;
+                  border-radius: 8px;
+                  padding: 5px;
+                  align-self: center;
+                }
+              }
+            }
+          }
+
+          .mint-button-section {
+            text-align: center;
+            padding-top: 48px;
+
+            .mint-button {
+              font-size: 33px;
+              display: inline-block;
+              background-color: #0072ff;
+              padding: 4px 4px;
+              border-radius: 8px;
+              cursor: pointer;
+            }
+
+            .mint-button-label {
+              padding-top: 8px;
+              font-family: "Glacial Indifference";
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .mint {
+    .mint-container {
+      // max-width: 1920px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      color: #ffffff;
+
+      .mint-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        // padding-
+        .mint-header-logo {
+          width: 200px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .mint-header-account {
+          display: flex;
+          gap: 16px;
+          align-items: flex-start;
+
+          .mint-header-address {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 8px;
+            border: 1px solid #0072ff;
+            cursor: pointer;
+          }
+
+          .mint-header-connect {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 8px;
+            cursor: pointer;
+            background-color: #0072ff;
+          }
+        }
+      }
+
+      .mint-main {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+
+        .mint-shark {
+          position: relative;
+
+          .mint-title-back {
+            position: relative;
+            left: -36px;
+            font-size: 144px;
+            line-height: 166px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+          }
+
+          .mint-shark-image {
+            position: absolute;
+            left: calc(20%);
+            bottom: 0px;
+          }
+
+          .mint-shark-leaf {
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+
+        .mint-info {
+          padding-bottom: 36px;
+
+          .mint-info-panel {
+            border-radius: 8px;
+            border: 3px solid #0072ff;
+            display: inline-block;
+            padding-top: 48px;
+            padding-bottom: 36px;
+
+            .mint-info-title {
+              padding: 0px 36px;
+              padding-bottom: 24px;
+
+              font-size: 36px;
+            }
+
+            .mint-info-date {
+              padding: 0px 36px;
+              padding-bottom: 24px;
+
+              display: flex;
+              justify-content: space-between;
+
+              .mint-info-time {
+                font-size: 27px;
+
+                .mint-info-time-content {
+                }
+
+                .mint-info-time-unit {
+                  color: #0072ff;
+                }
+              }
+            }
+
+            .mint-info-data {
+              padding: 0px 8px;
+              padding-top: 72px;
+              font-size: 21px;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+
+              .mint-info-data-row {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 8px;
+                padding-left: 4px;
+                padding-right: 4px;
+                border-bottom: 1px solid #0072ff;
+              }
+            }
+
+            .mint-button-section {
+              text-align: center;
+              padding-top: 48px;
+
+              .mint-button {
+                font-size: 33px;
+                display: inline-block;
+                background-color: #0072ff;
+                padding: 4px 32px;
+                border-radius: 8px;
+                cursor: pointer;
+              }
+
+              .mint-button-label {
+                padding-top: 8px;
+                font-family: "Glacial Indifference";
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .mint {
+    .mint-container {
+      // .mint-header {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     padding-top: 16px;
+      //     padding-left: 24px;
+      //     padding-right: 24px;
+      //     // padding-
+      //     .mint-header-logo {
+      //         width: 200px;
+
+      //         img {
+      //             width: 100%;
+      //         }
+      //     }
+
+      //     .mint-header-account {
+      //         display: flex;
+      //         gap: 16px;
+      //         align-items: flex-start;
+
+      //         .mint-header-address {
+      //             padding: 8px 16px;
+      //             border-radius: 8px;
+      //             border: 8px;
+      //             border: 1px solid #0072ff;
+      //             cursor: pointer;
+      //         }
+
+      //         .mint-header-connect {
+      //             padding: 8px 16px;
+      //             border-radius: 8px;
+      //             border: 8px;
+      //             cursor: pointer;
+      //             background-color: #0072ff;
+      //         }
+      //     }
+      // }
+
+      .mint-main {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        gap: 36px;
+
+        .mint-shark {
+          position: relative;
+
+          .mint-title-back {
+            position: relative;
+            left: -36px;
+            font-size: 144px;
+            line-height: 166px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+          }
+
+          .mint-shark-image {
+            position: relative;
+            left: unset;
+            bottom: 0px;
+            text-align: center;
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .mint-shark-leaf {
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+
+        .mint-info {
+          padding-bottom: 36px;
+          text-align: center;
+
+          .mint-info-panel {
+            border-radius: 8px;
+            border: 3px solid #0072ff;
+            display: inline-block;
+            padding-top: 48px;
+            padding-bottom: 36px;
+
+            .mint-info-title {
+              padding: 0px 36px;
+              padding-bottom: 24px;
+
+              font-size: 36px;
+            }
+
+            .mint-info-date {
+              padding: 0px 36px;
+              padding-bottom: 24px;
+
+              display: flex;
+              justify-content: space-between;
+
+              .mint-info-time {
+                font-size: 27px;
+
+                .mint-info-time-content {
+                }
+
+                .mint-info-time-unit {
+                  color: #0072ff;
+                }
+              }
+            }
+
+            .mint-info-data {
+              padding: 0px 8px;
+              padding-top: 72px;
+              font-size: 21px;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+
+              .mint-info-data-row {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 8px;
+                padding-left: 4px;
+                padding-right: 4px;
+                border-bottom: 1px solid #0072ff;
+              }
+            }
+
+            .mint-button-section {
+              text-align: center;
+              padding-top: 48px;
+
+              .mint-button {
+                font-size: 33px;
+                display: inline-block;
+                background-color: #0072ff;
+                padding: 4px 32px;
+                border-radius: 8px;
+                cursor: pointer;
+              }
+
+              .mint-button-label {
+                padding-top: 8px;
+                font-family: "Glacial Indifference";
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .mint {
+    .mint-container {
+      .mint-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        // padding-
+        .mint-header-logo {
+          display: none;
+        }
+
+        .mint-header-account {
+          display: flex;
+          gap: 3vw;
+          align-items: flex-start;
+          font-size: 3vw;
+
+          .mint-header-address {
+            padding: 2vw 4vw;
+            border-radius: 2vw;
+            border: 2vw;
+            border: 1px solid #0072ff;
+            cursor: pointer;
+          }
+
+          .mint-header-connect {
+            padding: 2vw 4vw;
+            border-radius: 2vw;
+            border: 2vw;
+            cursor: pointer;
+            background-color: #0072ff;
+          }
+        }
+      }
+
+      .mint-main {
+        .mint-shark {
+          .mint-title-back {
+            font-size: 24vw;
+            line-height: 28vw;
+          }
+
+          .mint-shark-image {
+            position: relative;
+            left: unset;
+            bottom: 0px;
+            text-align: center;
+            img {
+              max-width: 100%;
+            }
+          }
+
+          .mint-shark-leaf {
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+
+        .mint-info {
+          padding-bottom: 6vw;
+          text-align: center;
+
+          .mint-info-panel {
+            border-radius: 8px;
+            border: 3px solid #0072ff;
+            display: inline-block;
+            padding-top: 8vw;
+            padding-bottom: 36px;
+
+            .mint-info-title {
+              padding: 0px 6vw;
+              padding-bottom: 4vw;
+
+              font-size: 6vw;
+            }
+
+            .mint-info-date {
+              padding: 0px 6vw;
+              padding-bottom: 4vw;
+
+              display: flex;
+              justify-content: space-between;
+
+              .mint-info-time {
+                font-size: 5vw;
+
+                .mint-info-time-content {
+                }
+
+                .mint-info-time-unit {
+                  color: #0072ff;
+                }
+              }
+            }
+
+            .mint-info-data {
+              padding: 0px 1.5vw;
+              padding-top: 12vw;
+              font-size: 4vw;
+              display: flex;
+              flex-direction: column;
+              gap: 8vw;
+
+              .mint-info-data-row {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 1.5vw;
+                padding-left: 4px;
+                padding-right: 4px;
+                border-bottom: 1px solid #0072ff;
+              }
+            }
+
+            .mint-button-section {
+              text-align: center;
+              padding-top: 8vw;
+
+              .mint-button {
+                font-size: 6vw;
+                display: inline-block;
+                background-color: #0072ff;
+                padding: 4px 32px;
+                border-radius: 8px;
+                cursor: pointer;
+              }
+
+              .mint-button-label {
+                padding-top: 8px;
+                font-family: "Glacial Indifference";
+                font-size: 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

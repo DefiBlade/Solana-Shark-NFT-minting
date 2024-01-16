@@ -1,0 +1,182 @@
+.partnership {
+
+    .partnership-container {
+        // max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #D9D9D9;
+        position: relative;
+
+        .partnership-title-back {
+            overflow: hidden;
+            
+            .content {
+            font-weight: bold;
+            font-size: 140pt;
+            line-height: 166px;
+            text-align: right;
+            padding-bottom: 50px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            position: relative;
+            left: 130px;
+            }
+        }
+
+        .partnership-back4 {
+            position: absolute;
+            overflow: hidden;
+            top: 64px;
+            right: 0;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .partnership-back-circle {
+            position: absolute;
+            overflow: hidden;
+            left: -300px;
+            bottom: -100px;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .partnership-leaf-top {
+            position: absolute;
+            overflow: hidden;
+            top: 200px;
+            left: 180px;
+            
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .partnership-leaf-bottom {
+            position: absolute;
+            overflow: hidden;
+            bottom: 448px;
+            right: calc(50% - 600px);
+            
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .partnership-header {
+            text-align: center;
+
+            .partnership-header-title {
+                padding-top: 196px;
+                font-weight: bold;
+                font-size: 2rem;
+                overflow: hidden;
+                margin-bottom: .5rem;
+                text-overflow: ellipsis;
+                
+                color: #38B6FF;
+            }
+
+            .partnership-header-label {
+                font-family: 'Glacial Indifference';
+                font-size: 1.5rem;
+                color: white;
+                line-height: 29px;
+                padding-bottom: 96px;
+            }
+        }
+
+        .partnership-items {
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            align-items: center;
+            row-gap: 64px;
+
+            .partnership-item {
+                text-align: center;
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .partnership-image {
+            position: absolute;
+            left: calc(50% - 150px);
+            bottom: 150px;
+            text-align: center;
+            // padding-top: 128px;
+            // padding-bottom: 180px;
+        }
+
+        .partnership-title-back-bottom {
+            font-weight: bold;
+            font-size: 144px;
+            line-height: 166px;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            padding-bottom: 96px;
+            position: relative;
+            left: -60px;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .partnership {
+        .partnership-container {
+    
+            .partnership-title-back {
+                right: -14vw;
+            }
+    
+            .partnership-back4 {
+                top: 4.5vw;
+            }
+    
+            .partnership-back-circle {
+                left: -20vw;
+                bottom: -7vw;
+            }
+    
+            .partnership-leaf-top {
+                top: 30vw;
+                left: 10vw;
+            }
+    
+            .partnership-leaf-bottom {
+                bottom: 30vw;
+                right: 10vw;
+            }
+
+            .partnership-items {
+                padding: 0px 10vw;
+                row-gap: 4.5vw;
+            }
+    
+            .partnership-title-back-bottom {
+                left: -4vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .partnership {
+        .partnership-container {
+
+            .partnership-items {
+                grid-template-columns: repeat(2, auto);
+            }
+    
+        }
+    }
+}

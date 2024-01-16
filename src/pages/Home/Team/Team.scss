@@ -1,0 +1,129 @@
+.team {
+    text-transform: uppercase;  
+
+    .team-container {
+        // max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../../../assets/images/team-back.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .team-leaf-bottom {
+            position: absolute;
+            overflow: hidden;
+            bottom: 300px;
+            right: calc(50% - 450px);
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .team-leaf-top {
+            position: absolute;
+            overflow: hidden;
+            top: 240px;
+            left: calc(50% - 600px);
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .team-header {
+            text-align: center;
+            padding-top: 56px;
+            padding-bottom: 0;
+
+            .team-header-label {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                padding-bottom: 32px;
+                /* identical to box height */
+                
+                
+                color: rgba(217, 217, 217, 0.6);
+            }
+
+            .team-header-title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+                font-size: 2.5rem;
+                line-height: 83px;
+                color: #D9D9D9;
+
+                .team-header-highlight {
+                    color: #38B6FF;
+                }
+            }
+        }
+
+        .team-cards {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            padding: 0px 0px;
+            padding-bottom: 160px;
+            row-gap: 4rem;
+
+            .team-card {
+                text-align: center;
+
+                .team-card-avatar {
+                    padding-bottom: 32px;
+                }
+
+                .team-card-title {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #D9D9D9;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .team {
+    
+        .team-container {
+            .team-leaf-bottom {
+                bottom: 30vw;
+                right: 10vw;
+            }
+    
+            .team-leaf-top {
+                top: 30vw;
+                left: 10vw;
+            }
+    
+            .team-cards {
+                padding: 0px 10vw;
+                padding-bottom: 160px;
+                row-gap: 4rem;    
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .team {
+    
+        .team-container {
+    
+            .team-cards {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+        }
+    }
+}

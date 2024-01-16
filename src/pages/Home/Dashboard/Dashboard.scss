@@ -1,0 +1,232 @@
+
+    .dashboard {
+    overflow: hidden;
+
+    .dashboard-container {
+
+
+        // max-width: 1920px;
+
+        position: relative;
+        background: url('../../../assets/images/team-back.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        .dashboard-title-back-bottom {
+            position: absolute;
+            left: 860px;
+            top: 940px;
+
+            .content {
+            text-align: right;
+            font-size: 150pt;
+            line-height: 1.5;
+            // line-height: 166px;
+            color: transparent;
+            text-transform: uppercase;
+            -webkit-text-stroke: 1px white;
+            }
+        }
+
+        .dashboard-title-back {
+            font-size: 100pt;
+            font-weight: 400;
+            line-height: 1.5;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            position: absolute;
+            left: -50px;
+            top: 200px;
+            overflow: hidden;
+        }
+
+        .dashboard-content {
+            margin-right: -15px;
+            margin-left: -15px;
+            text-transform: uppercase;
+            padding-top: 15%;
+            padding-left: 15%;
+            position: relative;
+
+            .dashboard-content-top-leaf {
+                position: absolute;
+                top: -140px;
+                right: 300px;
+                overflow: hidden;
+                
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .dashboard-mint-title {
+                padding-top: 4px;
+                padding-left: 4px;
+                color: #fff;
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 80px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                word-break: keep-all;
+                white-space: nowrap;
+                margin-bottom: 0.5rem;
+
+                .dashboard-mint-highlight {
+                    color: #38B6FF;
+                }
+            }
+
+            // .dashboard-mint-clue {
+            //     padding-top: 28px;
+            //     padding-bottom: 40px;
+            // }
+
+            .dashboard-mint-control {
+                padding-top: 13.5%;
+                display: inline-block;
+
+                .dashboard-mint-button {
+                    margin: 10px;
+                    padding: 10px;
+                    border-radius: 15px;
+                    font-size: 24px;
+                    line-height: 1.5;
+                    background-color: #38B6FF;
+                    color: #FFF;
+                    display: inline-block;
+                    
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                .dashboard-mint-caption {
+                    padding-top: 24px;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFF; 
+                }
+            }
+
+        }
+
+        .dashboard-socials {
+            padding-left: 120px;
+            padding-bottom: 5vw;
+            padding-top: 10%;
+            display: flex;
+            gap: 54px;
+            position: relative;
+
+            .dashboard-socials-link {
+                cursor: pointer;
+                img {
+                    width: 1.75rem;
+                }
+            }
+
+            .dashboard-socials-leaf {
+                position: absolute;
+                left: 448px;
+                bottom: 56px;
+                overflow: hidden;
+                
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .dashboard-shark {
+            position: absolute;
+            overflow: hidden;
+            bottom: 0px;
+            right: 100px;
+            width: 35%;    
+            margin-top: -60px;
+            
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .dashboard {
+            // .dashboard-title-back-bottom {
+            //     .content {
+            //     top: -5vw;
+            //     right: -2vw;
+            //     }
+            // }
+    
+        .dashboard-container {
+            .dashboard-content {
+                padding-left: 15%;
+    
+                .dashboard-content-top-leaf {
+                    top: -10vw;
+                    right: 22vw;
+                }
+    
+                .dashboard-mint-control {
+                    .dashboard-mint-button {
+                        padding: 10px;
+                    }
+    
+                }
+    
+            }
+    
+    
+            .dashboard-socials {
+                padding-left: 6vw;
+            }
+    
+            .dashboard-shark {
+                right: 7vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        .dashboard-container {
+    
+            .dashboard-content {
+                padding-left: 5vw;
+                .dashboard-mint-control {
+                    display: block;
+                    padding-right: 5vw;
+                }
+            }
+            .dashboard-title-back-bottom {
+                position: absolute;
+                overflow: hidden;
+                bottom: 0;
+                right: 0;
+                top: unset;
+                left: unset;
+            }
+
+            .dashboard-socials {
+                padding-top: 40px;
+                gap: 10vw;
+            }
+    
+            .dashboard-shark {
+                z-index: 2;
+                right: 7vw;
+                position: static;
+                text-align: center;
+            }
+        }
+    }
+}
